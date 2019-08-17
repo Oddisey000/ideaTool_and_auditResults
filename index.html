@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="libs/foundation5/foundation.min.css" />
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.hyperlink').hover(function() {
+				$(this).addClass('transition');
+		 
+			}, function() {
+				$(this).removeClass('transition');
+			});
+	    });
+	</script>
+    <title>LPSplus applications</title>
+</head>
+<body>
+    <div class="container background-orange">
+        <div class="row feature">
+            <div class="large-7 column">
+                <h1 class="mySlides animate-fading">"Удосконалюватися – значить мінятися, бути досконалим – означає змінюватися часто"<br><strong style="font-family: 'pacifico';">&copy; Уїнстон Черчілль</strong></h1>
+				<h1 class="mySlides animate-fading">"Будь-яка криза – це нові можливості."<br><strong style="font-family: 'pacifico';">&copy; Уїнстон Черчілль</strong></h1>
+				<h1 class="mySlides animate-fading">"Успіх – це здатність крокувати від однієї невдачі до іншої, не втрачаючи ентузіазму"<br><strong style="font-family: 'pacifico';">&copy; Уїнстон Черчілль</strong></h1>
+				<h1 class="mySlides animate-fading">"Мої смаки прості. Я легко задовільняюсь найкращим."<br><strong style="font-family: 'pacifico';">&copy; Уїнстон Черчілль</strong></h1>
+            </div>
+            <div class="large-5 column">
+                <img src="assets/img/technology.png" />
+            </div>
+        </div>
+    </div>
+    <div class="container-spacy features">
+        <div class="row">
+			<a href="auditresults/">
+				<div class="large-5 column hyperlink">
+					<img src="assets/img/icon_5s.png" height="240" width="240" />
+					<h5>Audit Results</h5>
+					<p>Додаток для перегляду та подання результатів <strong>5S аудиту</strong></p>
+				</div>
+			</a>
+			<div class="large-2 column" style="padding: 20px 20px;"></div>
+			<a href="ideatool/">
+				<div class="large-5 column hyperlink">
+					<img src="assets/img/icon_ideatool.jpg" height="320" width="320" />
+					<h5>Idea Tool</h5>
+					<p>Засіб для подання <strong>See And Do</strong> ідей покращення від прямих працівників.</p>
+				</div>
+			</a>
+        </div>
+    </div>
+    <div class="container background-green recent footer">
+		<footer class="text-center"><br>
+			&copy; WUAKM 2019
+		</footer>
+    </div>
+</body>
+<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 9000);    
+		}
+	</script>
+</html>
