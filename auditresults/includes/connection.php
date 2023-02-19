@@ -2,10 +2,10 @@
 date_default_timezone_set('Europe/Kiev');
 header("Content-Type: text/html; charset=utf-8");
 
-$server     = "localhost";
-$username   = "root";
-$password   = "root";
-$db         = "5s_results";
+$server     = "";
+$username   = "";
+$password   = "";
+$db         = "";
 
 $conn=mysqli_connect($server,$username,$password,$db);
 mysqli_query($conn,"SET NAMES 'utf8'");
