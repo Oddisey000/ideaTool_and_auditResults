@@ -2,9 +2,9 @@
  
 Both projects are actively used at Leoni Ukraine as Opex applications
 
-![Opex main image](https://files.fm/thumb_show.php?i=nxxwctvyy)
-![Opex main image](https://files.fm/thumb_show.php?i=gy5yrq8yj)
-![Opex main image](https://files.fm/thumb_show.php?i=9h37nkseb)
+<img src="./screenshots/opex-main_picture_desc.jpg">
+<img src="./screenshots/idea-tool_picture_desc.jpg">
+<img src="./screenshots/auditresults_picture_desc.jpg">
  
 The projects requirements:
 - Apache web server v2.4.x
